@@ -2,4 +2,7 @@
     <string name="app_name">LocalBalance</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_base">BaseActivity</string>
+    <string name="balance">Balance :</string>
+    <string name="income">Income :</string>
+    <string name="expend">Expenditure :</string>
 </resources>

@@ -27,7 +27,7 @@ public class MainActivity extends BaseActivity {
             }
         });
 
-        setTitleText("Title");
+        setTitleText("Balance");
     }
 
     @Override
