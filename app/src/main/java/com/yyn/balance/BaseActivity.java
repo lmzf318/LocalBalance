@@ -1,10 +1,9 @@
 package com.yyn.balance;
 
+import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -94,4 +93,10 @@ public class BaseActivity extends AppCompatActivity {
         }
     }
 
+    protected void transactFragment(Fragment instance){
+        android.support.v4.app.FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragment_container,instance);
+        transaction.addToBackStack(null);
+        transaction.commit();
+    }
 }
